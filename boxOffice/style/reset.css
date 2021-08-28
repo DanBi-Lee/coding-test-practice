@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    background: inherit;
+    color: inherit;
+    font-size: inherit;
+}
