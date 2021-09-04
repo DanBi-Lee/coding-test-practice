@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import url('./reset.css');
+
+.image-box {
+    width: 1620px;
+    margin: 0px auto;
+}
+
+.upload {
+    width: 185px;
+    height: 54px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    background-color: #2F80ED;
+    margin-top: 77px;
+    margin-bottom: 58px;
+    border-radius: 10px;
+}
+
+.carousel-box {
+    position: relative;
+}
+
+.carousel-box .prev-btn,
+.carousel-box .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px;
+    height: 62px;
+    border-radius: 32px;
+    border: 3px solid;
+    color: #828282;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.carousel-box .prev-btn {
+    left: 0px;
+}
+
+.carousel-box .next-btn {
+    right: 0px;
+}
+
+.carousel {
+    display: flex;
+    height: 464px;
+}
+
+.carousel [class^="item"] {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel .item-1 {
+    transform: translateX(-150%) scale(50%);
+}
+
+.carousel .item-2 {
+    transform: translateX(-100%) scale(80%);
+}
+
+.carousel .item-3 {
+    z-index: 10;
+}
+
+.carousel .item-4 {
+    transform: translateX(0%) scale(80%);
+}
+
+.carousel .item-5 {
+    transform: translateX(50%) scale(50%);
+}
+
+.carousel .item-1,
+.carousel .item-5 {
+    z-index: 0;
+    filter: brightness(0.5);
+}
+
+.carousel .item-2,
+.carousel .item-4 {
+    z-index: 5;
+    filter: brightness(0.7);
+}
+
+.carousel [class^="item"] img{
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.3);
+    -webkit-box-reflect: below 35px linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.7));
+}

@@ -1,0 +1,20 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+.hidden {
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    z-index: -9999;
+    opacity: 0;
+}
