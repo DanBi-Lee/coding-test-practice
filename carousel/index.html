@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style/style.css">
+    <script defer src="./src/script/main.js" type="module"></script>
     <title>이미지 캐러셀</title>
 </head>
 <body>
     <section class="image-box">
         <h1 class="hidden">이미지 박스</h1>
-        <button class="upload">이미지 업로드</button>
+        <input type="file" name="image" id="upload" class="hidden">
+        <label for="upload" class="upload">이미지 업로드</label>
         <section class="carousel-box">
             <h2 class="hidden">캐러셀</h2>
             <ul class="carousel">

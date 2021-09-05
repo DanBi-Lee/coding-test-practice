@@ -18,3 +18,7 @@ ul, ol, li {
     z-index: -9999;
     opacity: 0;
 }
+
+button{
+    cursor: pointer;
+}

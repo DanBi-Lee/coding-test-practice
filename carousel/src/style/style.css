@@ -7,6 +7,9 @@
 }
 
 .upload {
+    display: block;
+    text-align: center;
+    line-height: 54px;
     width: 185px;
     height: 54px;
     font-size: 18px;
@@ -16,6 +19,7 @@
     margin-top: 77px;
     margin-bottom: 58px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .carousel-box {
@@ -49,7 +53,12 @@
     height: 464px;
 }
 
+.carousel li {
+    display: none;
+}
+
 .carousel [class^="item"] {
+    display: block;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
